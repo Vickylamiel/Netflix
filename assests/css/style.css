@@ -1,0 +1,520 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Netflix Sans', 'Helvetica Neue', 'Segoe UI', 'Roboto', 'Ubuntu', sans-serif;
+    /* overflow-x: hidden; */
+    max-width: 1440px;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: #000;
+    color: #fff;
+}
+
+.navbar-brand{
+    width: 100px;
+    padding: 0 30px;
+}
+
+.brand-logo{
+    width: 135px;
+    height: 100px;
+}
+
+.header-contianer{
+    background: url('../images/netflix\ background.jpg') rgba(0, 0, 0, 0.6);
+    background-size: cover;
+    background-blend-mode: darken;
+    height: 700px;
+    /* display: none; */
+    /* position: relative; */
+    border-bottom: 8px solid #222;
+    box-shadow: 2px 2px 2px #000;
+}
+
+.background{
+    height: 100%;
+}
+
+.navbar{
+    display: flex;
+    /* position: absolute; */
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 1100px; */
+}
+
+.button-container{
+    width: 100px;
+    margin: 30px;
+}
+
+.signin-button{
+    width: 80%;
+    /* height: 100px; */
+    background-color: #dc030f;
+    border: 1px solid #dc030f;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+.signin-button:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #fff;
+}
+
+.header-card{
+    text-align: center;
+    color: #fff;
+    margin-top: 120px;
+    position: relative;
+}
+
+.header-title{
+    font-size: 3.125rem;
+    font-weight: 500;
+}
+
+.header-text1{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.header-text2{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.email-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    /* min-width: 600px; */
+    margin: auto;
+    border: none;
+}
+
+input[type='email']{
+    /* width: 75%; */
+    /* height: 70px; */
+    padding: 1rem;
+    box-sizing: border-box;
+    height: 60px!important;
+    width: 450px;
+    outline: none;
+}
+
+.email-btn{
+    font-size: 1.625rem;
+    height: 60px!important;
+    width: auto;
+    padding: 0 1em;
+    color: #fff;
+    background-color: #e50914;
+    border: none;
+    cursor: pointer;
+}
+
+
+input[placeholder="Email address"]{
+    font-size: 16px;
+    color: #8c8c8c;
+}
+
+.first-container, .second-container, .third-container, .fourth-container, .faq-container{
+    margin-bottom: 0;
+    border-bottom: 8px solid #222;
+    padding: 70px 45px;
+    position: relative;
+    /* display: flex; */
+}
+
+.first-card, .second-card, .fourth-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 1100px;
+    margin: 0 auto;
+    max-width: 1100px;
+    min-height: 100px;
+    width: 100%;
+}
+
+/* .second-card{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 0 1 auto;
+    height: 100%;
+    width: 100%;
+} */
+
+.third-card{
+    margin: -2% 10%;
+    max-width: 1100px;
+    /* flex: 0 1 auto; */
+    height: 100%;
+    padding: 0 3rem 0 0;
+    width: 52%;
+}
+
+.title{
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.subtitle{
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+
+.tv-text, .mobile-text, .kids-text{
+    /* height: 100%; */
+    padding: 0 0 0 3rem;
+    width: 52%;
+    margin: -5% 0;
+    flex: 0 1 auto;
+    z-index: 3;
+}
+
+.tv-image-container, .mobile-image-container, .kids-image-container{
+    box-sizing: border-box;
+    display: flex;
+    flex: 0 1 auto;
+    height: 100%;
+    width: 48%;
+    position: relative;
+    /* margin: -8% 0 -4% -15%; */
+    overflow: hidden;
+    min-height: 100px;
+}
+
+.tv-image, .kids-image{
+    width: 100%;
+    z-index: 10;
+    max-width: 600px;
+    position: relative;
+}
+
+.mobile-image{
+    border: 0;
+    height: auto;
+    max-width: 100%;
+}
+
+#tvclip{
+   position: absolute;
+   top: 48%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 87%;
+   height: 55%;
+}
+
+.stranger{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #000;
+    border: 2px solid hsla(0,0%,100%,.25);
+    position: absolute;
+    left: 50%;
+    bottom: 8%;
+    transform: translate(-50%);
+    width: 60%;
+}
+
+.stranger img{
+    width: 50px;
+    margin-right: 10px;
+}
+
+.stranger p{
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin: 0.3em 0;
+}
+
+.stranger span{
+    color: #0071eb;
+    margin-right: 50px;
+}
+
+.download{
+    width: 3em;
+}
+
+.faq-card{
+    text-align: center;
+}
+
+.faq-h1{
+    font-size: 3.125rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+}
+
+.faq-list{
+    margin: 2em auto;
+    /* margin: 0 0 8px; */
+    width: 75%;
+    max-width: 815px;
+    list-style-type: none;
+}
+
+.faq-btn{
+    border: 0;
+    font-weight: 400;
+    margin-bottom: 1px;
+    padding: 0.8em 2.2em 0.8em 1.2em;
+    width: 100%;
+    height: 60px;
+    background: #303030;
+    cursor: pointer;
+    color: #fff;
+    text-align: left;
+    font-size: 1.625rem;
+}
+
+.fa-solid{
+    float: right;
+}
+
+.faq-list-item div{
+    width: 100%;
+    text-align: left;
+    background-color: #303030;
+    margin: 0 0 8px;
+    max-height: 1200px;
+    padding: 1.2em;
+    font-size: 1.625rem;
+}
+
+.faq-email-container{
+    max-width: 950px;
+    padding-top: 0.85rem;
+    margin: auto;
+}
+
+.faq-text{
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+
+li{
+    margin-bottom: 0.8rem;
+    /* margin: 0 0 8px; */
+}
+
+footer{
+    padding-top: 50px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.content{
+    /* width: 60%; */
+    /* margin: auto; */
+    font-size: 1em;
+    margin-top: 0;
+    min-width: 190px;
+    padding-bottom: 20px;
+    position: relative;
+    width: 100%;
+    height: 220px;
+}
+
+.content-container{
+    margin: 0 auto;
+    padding-top: 0;
+    width: 90%;
+}
+
+.content p{
+    margin: 0 0 30px;
+    padding: 0;
+}
+
+.content a{
+    color: #737373;
+    text-decoration: none;
+}
+
+.content a:hover{
+    text-decoration: underline;
+}
+
+footer ul{
+    list-style: none;
+    box-sizing: border-box;
+    font-size: 13px;
+    max-width: 1000px;
+}
+
+.footer-link{
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    min-width: 100px;
+    padding: 0 12px 0 0;
+    vertical-align: top;
+    width: 25%;
+    margin-left: 0;
+    float: left;
+}
+
+@media (max-width: 1450px){
+    .header-contianer{
+        height: 100%;
+        width: auto;
+        object-fit: cover;
+    }
+
+    .text-container{
+        padding: 30px 0;
+        font-size: 1.125rem;
+    }
+
+    .header-title{
+        font-size: 3.125rem;
+    }
+
+    .email-container{
+        width: 450px;
+        /* height: 60px; */
+    }
+
+    .email-btn{
+        width: 212px;
+    }
+    
+}
+
+
+@media (max-width: 950px){
+
+    .brand-logo{
+        width: 100px;
+        height: 35px;
+    }
+    .email-container{
+        display: block;
+        text-align: center;
+    }
+    input[type='email']{
+        max-width: 300px;
+    }
+
+    .email-btn{
+        font-size: 1rem;
+        height: 40px;
+        width: 130px;
+        margin-top: 20px;
+    }
+
+    .header-text2{
+        font-size: 1.625rem;
+        width: 500px;
+        margin: auto;
+    }
+
+    .first-card, .second-card, .fourth-card{
+        flex-direction: column;
+    }
+
+    .tv-text, .mobile-text, .kids-text, .third-card{
+        font-size: 1.125rem;
+        margin: 2rem;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+    }
+
+    .title{
+        font-size: 1.625rem;
+    }
+
+    .subtitle{
+        font-size: 1.125rem;
+    }
+
+    .tv-image-container, .mobile-image-container, .kids-image-container{
+        margin-top: 1em;
+        max-width: 600px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .faq-h1{
+        font-size: 2.5rem;
+    }
+
+    .faq-card{
+        font-size: 1.25rem;
+    }
+
+    .faq-list{
+        margin: 1.5em auto;
+        width: 90%;
+    }
+
+    .faq-btn{
+        padding: 15px;
+        font-size: 1.25rem;
+    }
+
+}
+
+@media (max-width: 550px){
+    .header-title{
+        font-size: 1.75rem;
+    }
+
+    .header-title br{
+        display: none;
+    }
+
+    .header-text1, .header-text2{
+        font-size: 1.125rem;
+        /* font-weight: 200px; */
+        width: 450px;
+    }
+
+    .faq-h1{
+        padding: 0 5%;
+        font-size: 1.625rem;
+    }
+
+    .faq-card{
+        font-size: 1.125rem;
+    }
+
+    .faq-list{
+        padding: 40px;
+    }
+
+    .faq-btn{
+        font-size: 1rem;
+    }
+}
